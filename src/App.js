@@ -1,6 +1,4 @@
 import './App.css';
-
-
 import Pets from './components/Pets';
 import Footer from './components/Footer';
 
@@ -13,35 +11,32 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className='App'>
-    
-    
-      
-      <div className='container'>
+    <div className='container'>
       <h1>These are our pets for adoption: </h1>
       <Pets 
         name='Baloo'
         image='baloo'
-        text='My family and I adopted it when my little sister was two years and a half and she wanted a pet. My parents had decided to adopt a dog because they dont like to have cats inside the house.'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       <Pets 
         name='Chipi'
         image='chipi'
-        text='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       <Pets 
         name='Coco'
         image='coco'
-        text='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       <Pets 
         name='Grey'
         image='grey'
-        text='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       <Pets 
         name='Marley'
         image='marley'
-        text='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       <Pets 
         name='Poly'
         image='poly'
-        text='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'/>
+        text='Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem'/>
       </div>
     <Footer />
       
