@@ -1,4 +1,5 @@
 import './App.css';
+import NavBar from './components/NavBar';
 import Pets from './components/Pets';
 import Footer from './components/Footer';
 
@@ -10,7 +11,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='App'>
+    
+    <div>
+      <NavBar />
+    
     <div className='container'>
       <h1>These are our pets for adoption: </h1>
       <Pets 
