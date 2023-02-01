@@ -1,17 +1,20 @@
 import React from 'react';
 import '../stylesheets/Pets.css';
 
-function Pets(props) {
+function Pets() {
 return (
     <div className='pet-container'>
         <img className='pet-image'
-        src={require (`../images/pet-${props.image}.png`)} alt='pets images'/>
+        src={require('../images/pet-baloo.png')} alt='baloo'/>
         <div className='container-text-pet'>
-            <p className='pet-name'>{props.name}</p>
-            <p className='text-pet'>{props.text}</p>
-
-
+            <p className='pet-name'>Baloo</p>
+            <p className='text-pet'>Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem</p>
         </div>
+    
+
+        
+    
+
 
     </div>
 )
