@@ -3,6 +3,8 @@ import '../stylesheets/Pets.css';
 
 function Pets() {
 return (
+    <div className='title'>
+        <h1>These are our pets for adpotion</h1>
     <div className='pet-container'>
         <img className='pet-image'
         src={require('../images/pet-baloo.png')} alt='baloo'/>
@@ -16,6 +18,7 @@ return (
     
 
 
+    </div>
     </div>
 )
 }

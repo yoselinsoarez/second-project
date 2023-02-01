@@ -7,7 +7,9 @@ return (
         <span className='nav-logo'>AdoptPets</span>
         <div className='nav-items'>
         <NavLink to='/home'>Home</NavLink>
+        <NavLink to='/aboutus'>About us</NavLink>
         <NavLink to='/pets'>Pets</NavLink>
+        
         
         
         </div>
