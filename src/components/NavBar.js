@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import '../stylesheets/NavBar.css';
-import logo from '../images/logo.png';
+import { ImHeart } from 'react-icons/im';
 
 function NavBar() {
     return (
         <div className="NavBar">
-            <span className="nav-logo">AdoptAPet</span>
-            <img className="logo-img" src={logo} alt="logo" />
+            <span className="nav-logo">
+                AdoptAPet <ImHeart style={{ color: 'red' }} />
+            </span>
+
             <div className="nav-items">
                 {[{ to: '/home', title: 'Home' }].map((item, index) => (
                     <NavLink key={index} to={item.to}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheets/Home.css';
 import frontpets from '../images/frontpets.png';
+import Card from 'react-bootstrap/Card';
 
 /**
  *
@@ -8,18 +9,26 @@ import frontpets from '../images/frontpets.png';
  */
 function Home() {
     return (
-        <div className="home-container">
-            <h1>Welcome to our animal adoption page.</h1>
-            <h3>Make a new friend</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat
-            </p>
+        <>
+            <Card className="home-title">
+                <Card.Body>
+                    Welcome to our animal adoption page, and make your new
+                    friend.
+                    <br />
+                    Animals are great teachers faithful companions.
+                    <br />
+                    Anyone who has or has had a pet knows how much these
+                    creatures can contribute to us. As a rule, they are loyal
+                    companions, faithful confidants who are non-judgmental and
+                    always have love to offer.
+                    <br />
+                    That is why we have created this page, so that you can adopt
+                    your new friend and give them a home.
+                </Card.Body>
+            </Card>
 
             <img className="home-img" src={frontpets} alt="img-home" />
-        </div>
+        </>
     );
 }
 

@@ -1,5 +1,10 @@
+.title {
+    margin: 40px;
+
+    text-align: center;
+}
+
 .pet-container {
-    
     width: 1200px;
     height: 370px;
     margin: 10px 10px 50px;
@@ -8,20 +13,12 @@
     justify-content: center;
     background-color: #fff;
     box-shadow: 0 3px 13px 1px rgb(27, 38, 49);
-
 }
-
-.title {
-    margin: 40px;
-    text-align: center;
-}
-
 
 .pet-image {
     height: 100%;
     width: auto;
 }
-
 
 .container-text-pet {
     text-align: center;
@@ -37,5 +34,4 @@
 .text-pet {
     font-size: 20px;
     text-align: justify;
-    
 }

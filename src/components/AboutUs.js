@@ -1,16 +1,13 @@
 import React from 'react';
 import '../stylesheets/AboutUS.css';
+import Card from 'react-bootstrap/Card';
 
 function AboutUs() {
     return (
-        <div className="about-container">
-            <h1>If you love pets this is the right place</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-            </p>
-        </div>
+        <Card className="card-container">
+            <Card.Body>If you love pets this is the right place.</Card.Body>
+            <Card.Body>Please contact us at xxxxxxx </Card.Body>
+        </Card>
     );
 }
 

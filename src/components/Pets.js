@@ -1,6 +1,5 @@
 import React from 'react';
 import '../stylesheets/Pets.css';
-import Footer from '../components/Footer';
 
 /**
  * with the use of an array of objects that represent each of the animals and their details
@@ -57,18 +56,26 @@ const pets = [
  */
 function Pets() {
     return (
-        <div className="title">
-            <h1>These are our pets for adpotion</h1>
-            {pets.map((pet) => (
-                <div className="pet-container" key={pet.id}>
-                    <img className="pet-image" src={pet.image} alt={pet.name} />
-                    <div className="container-text-pet">
-                        <p className="pet-name">{pet.name}</p>
-                        <p className="text-pet">{pet.description}</p>
+        <>
+            <div className="title">
+                <h1>These are our pets for adoption:</h1>
+            </div>
+            <div className="container">
+                {pets.map((pet) => (
+                    <div className="pet-container" key={pet.id}>
+                        <img
+                            className="pet-image"
+                            src={pet.image}
+                            alt={pet.name}
+                        />
+                        <div className="container-text-pet">
+                            <p className="pet-name">{pet.name}</p>
+                            <p className="text-pet">{pet.description}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
+        </>
     );
 }
 
