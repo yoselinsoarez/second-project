@@ -1,5 +1,6 @@
 import React from 'react';
 import '../stylesheets/Pets.css';
+import Footer from '../components/Footer';
 
 /**
  * with the use of an array of objects that represent each of the animals and their details

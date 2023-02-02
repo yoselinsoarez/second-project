@@ -2,13 +2,12 @@
     height: 40px;
     display: flex;
     justify-content: center;
-    background-color: #17202A ;
+    background-color: #17202a;
     font-size: 15px;
     color: #fff;
     margin-top: 100px;
-
-    
 }
 
-
-
+p {
+    margin-top: 15px;
+}
