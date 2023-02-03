@@ -15,16 +15,23 @@ function NavBar() {
                         {item.title}
                     </NavLink>
                 ))}
-                {[{ to: '/aboutus', title: 'About us' }].map((item, index) => (
-                    <NavLink key={index} to={item.to}>
-                        {item.title}
-                    </NavLink>
-                ))}
                 {[{ to: '/pets', title: 'Pets' }].map((item, index) => (
                     <NavLink key={index} to={item.to}>
                         {item.title}
                     </NavLink>
                 ))}
+                {[{ to: '/aboutus', title: 'About us' }].map((item, index) => (
+                    <NavLink key={index} to={item.to}>
+                        {item.title}
+                    </NavLink>
+                ))}
+                {[{ to: '/testimonials', title: 'Testimonials' }].map(
+                    (item, index) => (
+                        <NavLink key={index} to={item.to}>
+                            {item.title}
+                        </NavLink>
+                    )
+                )}
             </div>
         </div>
     );

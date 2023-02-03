@@ -1,5 +1,7 @@
 import React from 'react';
 import '../stylesheets/Pets.css';
+import { MdPets } from 'react-icons/md';
+import { Card } from 'react-bootstrap';
 
 /**
  * with the use of an array of objects that represent each of the animals and their details
@@ -58,7 +60,15 @@ function Pets() {
     return (
         <>
             <div className="title">
-                <h1>These are our pets for adoption:</h1>
+                <h1>
+                    Know the team
+                    <MdPets
+                        style={{
+                            color: 'black',
+                            height: '35px',
+                        }}
+                    />
+                </h1>
             </div>
             <div className="container">
                 {pets.map((pet) => (
@@ -75,6 +85,18 @@ function Pets() {
                     </div>
                 ))}
             </div>
+            <Card
+                style={{
+                    backgroundColor: '#17202a',
+                    color: '#fff',
+                    alignItems: 'center',
+                }}
+            >
+                <Card.Body>
+                    AdoptAPet - All rights reserved &copy;
+                    {new Date().getFullYear()}
+                </Card.Body>
+            </Card>
         </>
     );
 }

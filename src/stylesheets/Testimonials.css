@@ -1,0 +1,11 @@
+.testimonials-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+}

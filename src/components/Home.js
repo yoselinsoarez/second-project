@@ -12,8 +12,8 @@ function Home() {
         <>
             <Card className="home-title">
                 <Card.Body>
-                    Welcome to our animal adoption page, and make your new
-                    friend.
+                    Welcome to our animal adoption page, AdoptAPet, and make
+                    your new friend.
                     <br />
                     Animals are great teachers faithful companions.
                     <br />
@@ -28,6 +28,18 @@ function Home() {
             </Card>
 
             <img className="home-img" src={frontpets} alt="img-home" />
+            <Card
+                style={{
+                    backgroundColor: '#17202a',
+                    color: '#fff',
+                    alignItems: 'center',
+                }}
+            >
+                <Card.Body>
+                    AdoptAPet - All rights reserved &copy;
+                    {new Date().getFullYear()}
+                </Card.Body>
+            </Card>
         </>
     );
 }
