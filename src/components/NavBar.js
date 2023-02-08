@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import '../stylesheets/NavBar.css';
-import { ImHeart } from 'react-icons/im';
+import { MdPets } from 'react-icons/md';
 
 function NavBar() {
     return (
         <div className="NavBar">
             <span className="nav-logo">
-                AdoptAPet <ImHeart style={{ color: 'red' }} />
+                AdoptAPet <MdPets style={{ color: '#fff' }} />
             </span>
 
             <div className="nav-items">

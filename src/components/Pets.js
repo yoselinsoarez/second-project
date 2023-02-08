@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../stylesheets/Pets.css';
-import { MdPets } from 'react-icons/md';
-import { Card } from 'react-bootstrap';
+
+import { Card, Button } from 'react-bootstrap';
 
 /**
  * with the use of an array of objects that represent each of the animals and their details
@@ -57,18 +57,23 @@ const pets = [
  * @returns
  */
 function Pets() {
+    const [adoptedPet, setAdoptedPet] = useState(null);
+
+    const handleAdopt = (pet) => {
+        setAdoptedPet(pet);
+    };
+
     return (
         <>
+            {adoptedPet && (
+                <div className="congratulations-message">
+                    {window.alert(
+                        `Congratulations, you have adopted ${adoptedPet.name}!`
+                    )}
+                </div>
+            )}
             <div className="title">
-                <h1>
-                    Know the team
-                    <MdPets
-                        style={{
-                            color: 'black',
-                            height: '35px',
-                        }}
-                    />
-                </h1>
+                <h1>Know the team</h1>
             </div>
             <div className="container">
                 {pets.map((pet) => (
@@ -81,6 +86,12 @@ function Pets() {
                         <div className="container-text-pet">
                             <p className="pet-name">{pet.name}</p>
                             <p className="text-pet">{pet.description}</p>
+                            <Button
+                                variant="primary"
+                                onClick={() => handleAdopt(pet)}
+                            >
+                                Adopt me
+                            </Button>
                         </div>
                     </div>
                 ))}
