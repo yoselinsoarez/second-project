@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../stylesheets/Pets.css';
 
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Modal } from 'react-bootstrap';
 
 /**
  * with the use of an array of objects that represent each of the animals and their details
@@ -58,20 +58,31 @@ const pets = [
  */
 function Pets() {
     const [adoptedPet, setAdoptedPet] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
     const handleAdopt = (pet) => {
         setAdoptedPet(pet);
+        setShowModal(true);
     };
 
     return (
         <>
-            {adoptedPet && (
-                <div className="congratulations-message">
-                    {window.alert(
-                        `Congratulations, you have adopted ${adoptedPet.name}!`
-                    )}
-                </div>
-            )}
+            <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Congratulations</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    You have adopted {adoptedPet && adoptedPet.name}!
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button
+                        variant="primary"
+                        onClick={() => setShowModal(false)}
+                    >
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
             <div className="title">
                 <h1>Know the team</h1>
             </div>

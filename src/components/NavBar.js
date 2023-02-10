@@ -3,6 +3,13 @@ import '../stylesheets/NavBar.css';
 import { MdPets } from 'react-icons/md';
 
 function NavBar() {
+    const links = [
+        { to: '/home', title: 'Home' },
+        { to: '/pets', title: 'Pets' },
+        { to: '/aboutus', title: 'About us' },
+        { to: '/testimonials', title: 'Testimonials' },
+    ];
+
     return (
         <div className="NavBar">
             <span className="nav-logo">
@@ -10,28 +17,11 @@ function NavBar() {
             </span>
 
             <div className="nav-items">
-                {[{ to: '/home', title: 'Home' }].map((item, index) => (
+                {links.map((item, index) => (
                     <NavLink key={index} to={item.to}>
                         {item.title}
                     </NavLink>
                 ))}
-                {[{ to: '/pets', title: 'Pets' }].map((item, index) => (
-                    <NavLink key={index} to={item.to}>
-                        {item.title}
-                    </NavLink>
-                ))}
-                {[{ to: '/aboutus', title: 'About us' }].map((item, index) => (
-                    <NavLink key={index} to={item.to}>
-                        {item.title}
-                    </NavLink>
-                ))}
-                {[{ to: '/testimonials', title: 'Testimonials' }].map(
-                    (item, index) => (
-                        <NavLink key={index} to={item.to}>
-                            {item.title}
-                        </NavLink>
-                    )
-                )}
             </div>
         </div>
     );
